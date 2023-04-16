@@ -1,5 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        .container {
+          position: relative;
+          width: 100%;
+          max-width: 400px;
+        }
+        
+        .container img {
+          width: 100%;
+          height: auto;
+        }
+        
+        .container .btn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          background-color: pink;
+          color: navy;
+          font-size: 16px;
+          padding: 12px 24px;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          text-align: center;
+        }
+        
+        .container .btn:hover {
+          background-color: navy;
+          color: pink
+        }
+        </style>
+
+
+
+
+
+
 <head>
   <title>Bootstrap 5 Example</title>
   <meta charset="utf-8">
@@ -18,8 +57,10 @@
   <div class="row">
     <div class="col-sm-4">
       <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <div class="container">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lonelyplanet.com%2Farticles%2Fplanning-your-first-trip-to-italy&psig=AOvVaw0DecRsDR7zl6E9yxQDBI2N&ust=1681762324122000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKCpy5Gbr_4CFQAAAAAdAAAAABAD" alt="Snow" style="width:100%">
+        <button class="btn">Button</button>
+      </div>
     </div>
     <div class="col-sm-4">
       <h3>Column 2</h3>

@@ -24,7 +24,46 @@ h1 {font-size:500%}
 h2 {color:rgb(14, 0, 106);
   font-size: 15px;
   padding: 30px 60px;
-  background-color:rgba(255, 203, 252, 0.5)
+  background-color:rgba(255, 203, 252, 0.5);
+  text-align: center;
+}
+
+.container {
+          position: relative;
+          width: 100%;
+          max-width: 400px;}
+        .container .btn {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          background-color: rgb(14, 0, 106);
+          color: rgb(255, 203, 252);
+          font-size: 16px;
+          padding: 12px 24px;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          text-align: center;
+          font-weight: bold;
+        }
+        
+        .container .btn:hover {
+          background-color: rgb(255, 203, 252);
+          color: rgb(14, 0, 106);
+          font-weight: bold;}
+
+         
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(14, 0, 106);
+  color: white;
+  text-align: left;
+  font-weight: bold;
 }
 
 div {color:rgb(14, 0, 106);}
@@ -61,8 +100,7 @@ li a:hover {background-color: #111;}
     <li><a href="interests.html">Interests</a></li>
   </ul>
 
-  <h2><img src="https://media.licdn.com/dms/image/C4E03AQHejaW-xhLv_g/profile-displayphoto-shrink_400_400/0/1636726819772?e=1686787200&v=beta&t=5TnrTBuDE8VaLBj3SM5zQhZ6uZzGU3kVsixA4-JCFhA" alt="headshot" style="float:left;width:50px;height:50px;">
-  (consider removing headshot) My name is Leigh and this is my personal website to share a bit about myself and my life.  I currently in my last semester as a MBA student at Georgetown McDonough School of Business, working towards a concentration in consumer insights and analytics.  I have strong professional interests in marketing and digital technologies.  I interned at EY this past summer, focusing on marketing, and prevoiusly worked in the digital advertising industry before returning to school.  In my personal life, I love to travel and take up new creative hobbies. Navigate around this site to find out more details!</h2>
+  <h2> My name is Leigh and this is my personal website to share a bit about myself and my life.  I am from the Boston area and spent most of my life there, but I moved to DC to pursue my MBA at Georgetown McDonough School of Business.  I am currently in my final semester and working towards a concentration in consumer insights and analytics.  While I studied history and economics during my undergrad education at Colgate University. I have strong professional interests in marketing and digital technologies.  I interned at EY this past summer, focusing on marketing, and prevoiusly worked in the digital advertising industry before returning to school.  In my free time, I love to travel and take up new creative hobbies. Navigate around this site to find out more details!</h2>
 
   <!DOCTYPE html>
   <html>
@@ -90,25 +128,28 @@ li a:hover {background-color: #111;}
   <body>
 
   <div class="grid-container">
-    <div class="Work Experience">
+    <div class="container">
       <a href="workexperience.html"><img src="https://media.istockphoto.com/id/1198329053/photo/pink-office-desk-table-with-blank-notebook.jpg?b=1&s=170667a&w=0&k=20&c=HsNaQgw8ohwQ9Hpqxso6pqwI6O4jk81gxUNCDMHnGAs=" alt="workexperience" width="300" height="200" ></a>
+      <a href="workexperience.html"><button class="btn">Work Experience</button></a>
     </div>
-    <div class="Education">
+    <div class="container">
       <a href="education.html"><img src="https://img.freepik.com/premium-photo/lettering-back-school-pink-background-with-school-supplies_96727-2618.jpg" alt="school" width="300" height="200" ></a>
+      <a href="education.html"><button class="btn">Education</button></a>
     </div>
-    <div class="Interests">
+    <div class="container">
       <a href="interests.html"><img src="https://media.istockphoto.com/id/1163542159/photo/travel-concept-with-plane-and-flower-petals-on-pink-background-with-copy-space.jpg?s=612x612&w=0&k=20&c=VtwWg_1GoVljQ3qOoTJfTBdMrbN2oQtgoaTgAulzFoU=" alt="travel" width="300" height="200" ></a>
+      <a href="interests.html"><button class="btn">Interests</button></a>
     </div> 
   </div>
   
   </body>
   </html>
 
-<footer style="margin-top:2em; margin-bottom:2em;">
-    <hr>
-    <img src="https://media.licdn.com/dms/image/C4E03AQHejaW-xhLv_g/profile-displayphoto-shrink_400_400/0/1636726819772?e=1686787200&v=beta&t=5TnrTBuDE8VaLBj3SM5zQhZ6uZzGU3kVsixA4-JCFhA" alt="headshot" width="75" height="75" >
-    &copy; Copyright 2023 Leigh Blumenberg |
-  </footer>
+
+  <div class="footer">
+    <p>
+    &copy; Copyright 2023 Leigh Blumenberg</p>
+  </div>
 
 
 
