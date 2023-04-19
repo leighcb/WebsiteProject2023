@@ -22,24 +22,6 @@ h1 { outline: 5px dotted rgb(188, 143, 185);}
 h1 {font-family: 'Brush Script MT'}
 h1 {font-size:500%}
 
-h2 {color:rgb(14, 0, 106);
-  font-size: 20px; }
-  p {color:rgb(14, 0, 106);
-  font-size: 15px;}
-  h5 {color:rgb(14, 0, 106);
-  font-size: 15px;;
-font-weight: bold;}
-
-  h4 {color:rgb(255, 203, 252);
-  background-color:rgb(14, 0, 106, .75);
-  font-size: 30px;
-  padding: 10px; 
-  width: 350px;
-  margin-left: 37%; 
-  align: center;
-  font-weight: bold;
-  text-align: center;}
-
      /* Footer */    
 .footer {
   position: fixed;
@@ -49,8 +31,7 @@ font-weight: bold;}
   background-color: rgb(14, 0, 106);
   color: white;
   text-align: left;
-  font-weight: bold;
-}
+  font-weight: bold;}
 
 div {color:rgb(14, 0, 106);}
 
@@ -74,6 +55,59 @@ li a {
 
 li a:hover {background-color:rgb(255, 203, 252)}
 
+* {
+  box-sizing: border-box;}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+img {
+  border: 5px solid rgb(14, 0, 106);
+}
+
+/* Top right text */
+.top-left {
+  position: absolute;
+  top: 20px;
+  position: relative;
+  text-align: center;
+  color: rgb(255, 203, 252);
+  font-weight: bold;
+  background-color: rgb(14, 0, 106);
+}
+
+    /* Header Grid Container */
+    .grid-container {
+    display: block;
+    grid: 270px / auto auto auto;
+    grid-gap: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgb(255, 203, 252, .5);
+    text-align: center;
+    padding-top: 5px;
+  padding-bottom: 15px;
+    font-size: 18px;
+  }
 </style>
 </head>
 <body>
@@ -87,62 +121,78 @@ li a:hover {background-color:rgb(255, 203, 252)}
     <li><a href="interests.html">Interests</a></li>
   </ul>
 
-  <!DOCTYPE html>
-  <html>
-  <head>
-  <style>
-    /* Gid Container */
-  .grid-container {
-    display: grid;
-    grid: 270px / auto auto auto;
-    grid-gap: 10px;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 10px;
-  }
-  
-  .grid-container > div {
-    background-color: rgb(255, 203, 252, .75);
-    text-align: center;
-    padding-top: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-    font-size: 18px;
-  }
-  </style>
-  </head>
-  <body>
-
-    <h4>Professional Experience</h4>
-
   <div class="grid-container">
     <div class="container">
-      <h2>Work</h2>
-      <p>Senior Consultant MBA Intern | Ernst & Young</p>
-      <p>Digital Media Manager | Digitas</p>
-      <p>Senior Media Planner | Digitas</p>
-      <p>Associate Media Planner | Digitas</p>
-    </div>
-    <div class="container">
-      <h2>Activities</h2>
-      <p>Teaching Assistant | Marketing Analytics and Customer Strategy</p>
-      <p>VP of Career Management | Graduate Consulting Club</p>
-      <p>VP of Communication | Georgetown Marketing Club </p>
-    </div>
-    <div class="container">
-      <h2>Technology</h2>
-      <h5>Analytics</h5>
-        <p>Tableau, JMP, R, Google Analytics, HTML, CSS </p>
-      <h5>Digital Media </h5>
-       <p>Google Display and Video 360, Google Ads, Amazon Advertising Platform, The Trade Desk</p>
-    </div> 
+   <h2>New England</h2>
   </div>
-  
-  </body>
-  </html>
 
+  <div class="row">
+    <div class="column">
+      <div class="top-left">Boston</div>    
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg" alt="Snow" style="width:100%">
+      </div>
+    <div class="column">
+      <div class="top-left">Boston</div>    
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <div class="top-left">Boston</div>    
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+
+  <div class="grid-container">
+  <div class="container">
+    <h2>Travel</h2>
+   </div>
+  <div class="column">
+    <div class="top-left">Boston</div>   
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg" alt="Snow" style="width:100%">
+    </div>
+  <div class="column">
+    <div class="top-left">Boston</div>   
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <div class="top-left">Boston</div>   
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+ <div class="row">
+    <div class="column">
+      <div class="top-left">Boston</div>    
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg" alt="Snow" style="width:100%">
+      </div>
+    <div class="column">
+      <div class="top-left">Boston</div>    
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <div class="top-left">Boston</div>    
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg" alt="Mountains" style="width:100%">
+    </div>
+
+    <div class="grid-container">
+<div class="container">
+  <h2>Crafts</h2>
+ </div>
+  <div class="row">
+    <div class="column">
+      <div class="top-left">Boston</div>    
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg" alt="Snow" style="width:100%">
+      </div>
+    <div class="column">
+      <div class="top-left">Boston</div>    
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <div class="top-left">Boston</div>    
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg" alt="Mountains" style="width:100%">
+    </div>
 
   <div class="footer">
     <p>
     &copy; Copyright 2023 Leigh Blumenberg</p>
   </div>
+</body>
+</html>
