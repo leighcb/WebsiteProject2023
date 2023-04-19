@@ -14,14 +14,23 @@
 
 body {background-image: url('https://cdn.shopify.com/s/files/1/0597/0549/1612/products/2903-25858_af99d5c7-d5d6-4c15-a7c5-57900f8114b2.jpg?v=1664258422');}
 
+/* Text Formatting */
 h1 {text-align: center;}
 h1 {color:rgb(35, 0, 110);}
-h1 {background-color:rgba(1255, 203, 252, 0.5)}
-h1 {outline: 5px dotted rgb(188, 143, 185);}
+h1 { background-color:rgba(1255, 203, 252, 0.5)}
+h1 { outline: 5px dotted rgb(188, 143, 185);}
 h1 {font-family: 'Brush Script MT'}
 h1 {font-size:500%}
 
-h4 {color:rgb(255, 203, 252);
+h2 {color:rgb(14, 0, 106);
+  font-size: 20px; }
+  p {color:rgb(14, 0, 106);
+  font-size: 15px;}
+  h5 {color:rgb(14, 0, 106);
+  font-size: 15px;;
+font-weight: bold;}
+
+  h4 {color:rgb(255, 203, 252);
   background-color:rgb(14, 0, 106, .75);
   font-size: 30px;
   padding: 10px; 
@@ -31,47 +40,7 @@ h4 {color:rgb(255, 203, 252);
   font-weight: bold;
   text-align: center;}
 
-h2 {color:rgb(14, 0, 106);
-  font-size: 20px;
-  padding-top: 10px; 
-  padding-left: 20px}
-  h5 {color:rgb(14, 0, 106);
-  font-size: 20px;
-  padding-left: 30px}
-  p {color:rgb(14, 0, 106);
-  font-size: 15px;
-  padding-left: 30px; 
-  padding-bottom: 5px;}
-
-
-
-.container {
-          position: relative;
-          width: 100%;
-          max-width: 400px;}
-        .container .btn {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          background-color: rgb(14, 0, 106);
-          color: rgb(255, 203, 252);
-          font-size: 16px;
-          padding: 12px 24px;
-          border: none;
-          cursor: pointer;
-          border-radius: 5px;
-          text-align: center;
-          font-weight: bold;
-        }
-        
-        .container .btn:hover {
-          background-color: rgb(255, 203, 252);
-          color: rgb(14, 0, 106);
-          font-weight: bold;}
-
-
+     /* Footer */    
 .footer {
   position: fixed;
   left: 0;
@@ -85,6 +54,9 @@ h2 {color:rgb(14, 0, 106);
 
 div {color:rgb(14, 0, 106);}
 
+h6 {color: white}
+
+/* Navigation Bar*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -102,12 +74,8 @@ li a {
   padding: 14px 16px;
   text-decoration: none;}
 
-li a:hover {background-color:rgb(255, 203, 252);}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+li a:hover {background-color:rgb(255, 203, 252)}
+
 </style>
 </head>
 <body>
@@ -116,39 +84,67 @@ li a:hover {background-color:rgb(255, 203, 252);}
 
   <ul>
     <li><a href="Home.html">Home</a></li>
-    <li><a href="workexperience.html">Professional Experience</a></li>
+    <li><a href="workexperience.html">Work Experience</a></li>
     <li><a href="education.html">Education</a></li>
     <li><a href="interests.html">Interests</a></li>
   </ul>
 
-<h4>Professional Experience</h4>
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+    /* Gid Container */
+  .grid-container {
+    display: grid;
+    grid: 270px / auto auto auto;
+    grid-gap: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgb(255, 203, 252, .75);
+    text-align: center;
+    padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+    font-size: 18px;
+  }
+  </style>
+  </head>
+  <body>
 
-  <div class="row">
-    <div class="column" style=background-color:rgb(255,203,252,0.75);}>
-    <h2>Work</h2>
-    <p>Senior Consultant MBA Intern | Ernst & Young</p>
-    <p>Digital Media Manager | Digitas</p>
-    <p>Senior Media Planner | Digitas</p>
-    <p>Associate Media Planner | Digitas</p>
-  </div>
+    <h4>Professional Experience</h4>
 
-  <div class="row">
-    <div class="column" style=background-color:rgb(255,203,252,0.75);}>
-    <h2>Activities</h2>
-    <p>Teaching Assistant | Marketing Analytics and Customer Strategy</p>
-    <p>VP of Career Management | Graduate Consulting Club</p>
-    <p>VP of Communication | Georgetown Marketing Club </p>
+  <div class="grid-container">
+    <div class="container">
+      <h2>Work</h2>
+      <p>Senior Consultant MBA Intern | Ernst & Young</p>
+      <p>Digital Media Manager | Digitas</p>
+      <p>Senior Media Planner | Digitas</p>
+      <p>Associate Media Planner | Digitas</p>
+    </div>
+    <div class="container">
+      <h2>Activities</h2>
+      <p>Teaching Assistant | Marketing Analytics and Customer Strategy</p>
+      <p>VP of Career Management | Graduate Consulting Club</p>
+      <p>VP of Communication | Georgetown Marketing Club </p>
+    </div>
+    <div class="container">
+      <h2>Technology</h2>
+      <h5>Analytics</h5>
+        <p>Tableau, JMP, R, Google Analytics, HTML, CSS </p>
+      <h5>Digital Media </h5>
+       <p>Google Display and Video 360, Google Ads, Amazon Advertising Platform, The Trade Desk</p>
+    </div> 
   </div>
+  
+  </body>
+  </html>
+
 
   <div class="footer">
-    <p>
-    &copy; Copyright 2023 Leigh Blumenberg</p>
+    <h6>
+    &copy; Copyright 2023 Leigh Blumenberg</h6>
   </div>
-
-</body>
-
-
-
-
-
-  
